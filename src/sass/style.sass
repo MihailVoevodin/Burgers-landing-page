@@ -5,7 +5,7 @@
     
 .header
     background-image: url('../img/header-bg.jpg')
-    height: 100vh
+    min-height: 100vh
     background-repeat: no-repeat
     background-size: cover
     background-position: center center
@@ -76,7 +76,7 @@
 
 .about
     background: url('../img/about-bg.jpg') bottom center no-repeat, radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%)
-    height: 100vh
+    min-height: 100vh
     background-size: cover
     position: relative
     &-wrapper
@@ -156,7 +156,7 @@
 
 
 .features
-    height: 100vh
+    min-height: 100vh
     background-image: url('../img/features-bg.jpg')
     background-repeat: no-repeat
     background-size: cover
@@ -226,7 +226,7 @@
 
 
 .requirements
-    height: 100vh
+    min-height: 100vh
     background-image: url('../img/requirements-bg.jpg')
     background-repeat: no-repeat
     background-size: cover
@@ -256,7 +256,7 @@
 
 
 .quotes
-    height: 100vh
+    min-height: 100vh
     background-image: url('../img/quotes-bg.jpg')
     background-repeat: no-repeat
     background-size: cover
@@ -320,6 +320,82 @@
     a
         &::after
             left: 26px
+
+.newsletter
+    min-height: 100vh
+    background-color: #080A0B
+
+.subscribe
+    display: flex
+    justify-content: space-between
+    padding-top: 50px
+    &-content
+        padding-top: 170px
+        max-width: 650px
+        &__text
+            padding-top: 50px
+            padding-bottom: 60px
+        &__form
+            display: flex
+            &-email
+                display: block
+                min-width: 370px
+                border: none
+                background: rgba(255, 255, 255, 0.08)
+                border-radius: 5px
+                color: $second-color
+                margin-right: 17px
+                padding: 0 15px
+                position: relative
+                &::placeholder
+                    @include tiny-font
+                    position: absolute
+                    color: #fff
+                    left: 15px
+                    top: 4px
+
+.footer
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 30px
+    &-socials
+        &__link
+            .icon
+                fill: white
+                transition: .3s
+                &:hover
+                    fill: red
+            &:not(:first-child)
+                margin-left: 55px
+    &-privacy
+        display: flex
+        justify-content: space-between
+        padding-top: 25px
+        border-top: 1px solid rgba(255,255,255, .5)
+        &__copyright
+            @include tiny-font
+        &__links
+            display: flex
+            @include tiny-font
+            opacity: 1
+            text-transform: uppercase
+        &__link
+            display: block
+            &:not(:first-child)
+                margin-left: 20px
+                position: relative
+                &::before
+                    position: absolute
+                    content: ''
+                    border-left: 1px solid #fff
+                    height: 20px
+                    left: -10px
+                    top: 2px
+            
+
+        
 
 
 @import 'media'              
