@@ -1,15 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-    
 
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a href="#" class="logo"><img src="img/logo.png" alt="SOS"></a>
+                <nav class="menu animate__animated animate__backInDown">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a href="" class="menu-list__link">Main</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="" class="menu-list__link">About</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="" class="menu-list__link">Game features</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="" class="menu-list__link">System requirements</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="" class="menu-list__link">Quotes</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <button class="header-right__lang">Eng</button>
+                    <div class="header-right__xbox">
+                        <a href="#"></a>
+                    </div>
+                    <div class="header-right__steam">
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <h1 class="header-content__title title">
+                    SURVIVE AT ALL COSTS
+                </h1>
+                <div class="header-content__descr subtitle">
+                    Experience new social battle royale game
+                </div>
+                <button class="header-content__btn btn">Buy Now on Steam | $14.99</button>
+            </div>
+            <div class="scroll animate__animated animate__fadeInDown animate__slow animate__infinite">
+                <a href="#about">The story</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content wow animate__rotateInDownLeft">
+                    <div class="about-content__subtitle subtitle">
+                        What is SOS?
+                    </div>
+                    <div class="about-content__title title">
+                        social battle royale game
+                    </div>
+                    <div class="about-content__text">
+                        <p>
+                            Each round, <span class="about-content__text-bold">you</span> and <span
+                                class="about-content__text-bold">15</span> other contestants compete to
+                            escape a deadly island filled with monsters. The trick is: <span
+                                class="about-content__text-bold">three</span> people can survive. Will you run
+                            solo or form friendships with others to escape?
+                        </p>
+                        <p>Making the right decisions could be the
+                            difference between <span class="about-content__text-underline">life and death.</span></p>
+                    </div>
+                </div>
+                <div class="about-slider wow animate__rotateInDownRight">
+                    <div class="about-slider__item">
+                        <img src="img/slider1.jpg" alt="image">
+                    </div>
+                    <div class="about-slider__item">
+                        <img src="img/slider2.jpg" alt="image">
+                    </div>
+                    <div class="about-slider__item">
+                        <img src="img/slider3.jpg" alt="image">
+                    </div>
+                    <div class="about-slider__item">
+                        <img src="img/slider4.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll about-scroll animate__animated animate__fadeInDown animate__slow animate__infinite">
+                <a href="#features">Features</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-wrapper wow animate__backInRight">
+                <div class="features-subtitle subtitle">
+                    What’s so special?
+                </div>
+                <div class="features-title title">
+                    Features
+                </div>
+                <div class="features-accordion">
+                    <div class="features-accordion__item active">
+                        <h4 class="features-accordion__title">
+                            SURVIVE AT ALL COSTS
+                        </h4>
+                        <p class="features-accordion__text">
+                            You have 30 minutes to find a relic, signal
+                            for extraction, and grab one of three spots
+                            on the rescue chopper.
+                        </p>
+                    </div>
+                    <div class="features-accordion__item">
+                        <h4 class="features-accordion__title">
+                            CREATE ALLIES AND ENEMIES
+                        </h4>
+                        <p class="features-accordion__text">
+                            You have 30 minutes to find a relic, signal
+                            for extraction, and grab one of three spots
+                            on the rescue chopper.
+                        </p>
+                    </div>
+                    <div class="features-accordion__item">
+                        <h4 class="features-accordion__title">
+                            IMPRESS THE AUDIENCE
+                        </h4>
+                        <p class="features-accordion__text">
+                            You have 30 minutes to find a relic, signal
+                            for extraction, and grab one of three spots
+                            on the rescue chopper.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll features-scroll animate__animated animate__fadeInDown animate__slow animate__infinite">
+                <a href="#requirements">Requirements</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="requirements" id="requirements">
+        <div class="container">
+            <div class="requirements-wrapper">
+                <div class="requirements-subtitle subtitle">
+                    Can My Computer Run this game?
+                </div>
+                <div class="requirements-title title">
+                    system requirements
+                </div>
+                <table class="requirements-table wow animate__rotateIn">
+                    <tr>
+                        <td>
+                            <div class="requirements-table__subtitle subtitle">
+                                OS:
+                            </div>
+                            <div class="requirements-table__text">
+                                Windows 7 64-bit only
+                                (No OSX support at this time)
+                            </div>
+                        </td>
+                        <td>
+                            <div class="requirements-table__subtitle subtitle">
+                                pROCESSOR:
+                            </div>
+                            <div class="requirements-table__text">
+                                Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="requirements-table__subtitle subtitle">
+                                mEMORY:
+                            </div>
+                            <div class="requirements-table__text">
+                                8 GB RAM
+                            </div>
+                        </td>
+                        <td>
+                            <div class="requirements-table__subtitle subtitle">
+                                storage:
+                            </div>
+                            <div class="requirements-table__text">
+                                8 GB available space
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="requirements-table__subtitle subtitle">
+                                GRAPHICS:
+                            </div>
+                            <div class="requirements-table__text">
+                                NVIDIA GeForce GTX 660 2GB or
+                                AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div
+                class="scroll requirements-scroll animate__animated animate__fadeInDown animate__slow animate__infinite">
+                <a href="#quotes">press quotes</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="quotes" id="quotes">
+        <div class="container">
+            <div class="quotes-wrapper">
+                <div class="quotes-description">
+                    <div class="quotes-description__subtitle subtitle">
+                        What people think?
+                    </div>
+                    <div class="quotes-description__title title">
+                        Press quotes
+                    </div>
+                    <div class="quotes-description__text">
+                        Our goal is to create a product and
+                        service that you’re satisfied with and
+                        use it every day. This is why we’re
+                        constantly working on our services to make
+                        it better every day and really listen to
+                        what our users has to say.
+                    </div>
+                    <button class="quotes-description__btn btn">
+                        Read more testimonials
+                    </button>
+                </div>
+                <div class="quotes-content">
+                    <div class="quotes-content__item">
+                        <div class="quotes-content__item-top">
+                            <img class="quotes-content__item-img" src="img/quote1.png" alt="">
+                            <div class="quotes-content__item-person">
+                                <div class="quotes-content__item-name subtitle">
+                                    Evan Lahti
+                                </div>
+                                <div class="quotes-content__item-prof">
+                                    PC Gamer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quotes-content__item-text">
+                            “One of my gaming highlights of the year.”
+                        </div>
+                        <div class="quotes-content__item-date">
+                            October 18, 2018
+                        </div>
+                    </div>
+                    <div class="quotes-content__item">
+                        <div class="quotes-content__item-top">
+                            <img class="quotes-content__item-img" src="img/quote2.png" alt="">
+                            <div class="quotes-content__item-person">
+                                <div class="quotes-content__item-name subtitle">
+                                    Jada Griffin
+                                </div>
+                                <div class="quotes-content__item-prof">
+                                    Nerdreactor
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quotes-content__item-text">
+                            “The next big thing in the world of streaming and survival games.”
+                        </div>
+                        <div class="quotes-content__item-date">
+                            December 21, 2018
+                        </div>
+                    </div>
+                    <div class="quotes-content__item">
+                        <div class="quotes-content__item-top">
+                            <img class="quotes-content__item-img" src="img/quote3.png" alt="">
+                            <div class="quotes-content__item-person">
+                                <div class="quotes-content__item-name subtitle">
+                                    Aaron Williams
+                                </div>
+                                <div class="quotes-content__item-prof">
+                                    Uproxx
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quotes-content__item-text">
+                            “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+                        </div>
+                        <div class="quotes-content__item-date">
+                            December 24, 2018
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="scroll quotes-scroll animate__animated animate__fadeInDown animate__slow animate__infinite">
+                <a href="#newsletter">newsletter</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

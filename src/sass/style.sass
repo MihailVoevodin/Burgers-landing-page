@@ -1,0 +1,325 @@
+@import 'fonts'
+@import 'general'
+@import 'vars'
+@import 'mixins'
+    
+.header
+    background-image: url('../img/header-bg.jpg')
+    height: 100vh
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    position: relative
+    &-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 22px
+    &-right
+        display: flex
+        align-items: center
+        &__lang
+            color: #fff
+            @include header-top
+            margin-right: 60px
+            position: relative
+            line-height: 12px
+            &::after
+                content: ''
+                background-image: url('../img/lang-arrow.svg')
+                position: absolute
+                right: -13px
+                top: 35%
+                height: 5px
+                width: 10px
+        &__xbox
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                height: 30px
+                width: 1px
+                left: -25px
+                border-left: .8px solid #fff
+                opacity: 0.5
+            a
+                display: block
+                background-image: url('../img/xbox-icon.svg')
+                width: 31px
+                height: 31px
+        &__steam
+            padding-left: 17px
+            a
+                display: block
+                background-image: url('../img/steam-icon.svg')
+                width: 31px
+                height: 31px
+    &-content
+        text-align: center
+        &__title
+            margin: 240px 0 15px 0
+        &__descr
+            padding-bottom: 30px
+
+
+.menu
+    &-list
+        display: flex
+        @include header-top
+        &__item
+            padding: 0 20px
+            transition: .3s ease-out
+            &:hover
+                color: red
+                text-decoration: underline
+
+
+.about
+    background: url('../img/about-bg.jpg') bottom center no-repeat, radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%)
+    height: 100vh
+    background-size: cover
+    position: relative
+    &-wrapper
+        padding-top: 150px
+        padding-bottom: 150px
+        display: flex
+    &-content
+        padding-top: 50px
+        &__subtitle
+            padding-bottom: 10px
+        &__title
+            position: relative
+            padding-bottom: 50px
+            &::after
+                content: ''
+                position: absolute
+                border-bottom: 3px solid #fff
+                width: 100%
+                height: 3px
+                left: 0
+                bottom: 57px
+        &__text
+            text-align: justify
+            padding-right: 50px
+            padding-left: 185px
+            &-bold
+                font-weight: 700
+            &-underline
+                border-bottom: 5px solid $second-color
+
+.about-scroll
+    a
+        &::after
+            left: 17px
+
+.about-slider
+    max-width: 503px
+    position: relative
+    margin: 0 50px
+
+.slider-arrow
+    position: absolute
+    top: 50%
+    cursor: pointer
+    &__next
+        right: -50px
+    &__prev
+        left: -50px
+        z-index: 1
+
+.slick-dots .slick-active button
+    background-color: #fff
+    opacity: 1
+
+.slick-dots
+    position: absolute
+    width: 100%
+    text-align: center
+    bottom: 0
+    li
+        display: inline-block
+        &:not(:first-child)
+            margin-left: 50px
+    button
+        border: 1px solid #fff
+        background-color: transparent
+        opacity: 0.5
+        outline: none
+        font-size: 0
+        width: 14px
+        height: 14px
+        border-radius: 50%
+        transition: .2s
+        &:hover
+            background-color: #fff
+            opacity: 1
+
+
+.features
+    height: 100vh
+    background-image: url('../img/features-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    &-wrapper
+        padding-left: 660px
+        padding-top: 170px
+        margin: 0
+    &-title
+        padding-top: 10px
+        padding-bottom: 70px
+    &-accordion
+        max-width: 410px
+        text-align: justify
+        position: relative
+        &__item
+            position: relative
+            padding-left: 47px
+            &::before
+                content: ''
+                position: absolute
+                width: 14px
+                height: 14px
+                left: 0
+                top: 11px
+                border: 1px solid #fff
+                border-radius: 50%
+        .active
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                width: 14px
+                height: 14px
+                left: 0
+                top: 11px
+                border: 1px solid #fff
+                border-radius: 50%
+                background-color: #fff
+            &::after
+                content: ''
+                position: absolute
+                width: 0px
+                height: 131px
+                left: 6px
+                top: 19px
+                border-left: 2px solid #fff     
+        &__title
+            margin: 0
+            font-family: $fontbebas
+            color: $second-color
+            font-size: 36px
+            line-height: 36px
+            letter-spacing: 2px
+        &__text
+            max-height: 0
+            overflow: hidden
+            transition: .2s
+
+.features-scroll
+    a
+        &::after
+            left: 35px
+
+.features-accordion__item.active .features-accordion__text
+    max-height: 66px
+
+
+.requirements
+    height: 100vh
+    background-image: url('../img/requirements-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: right bottom
+    position: relative
+    &-wrapper
+        text-align: center
+        padding-top: 145px
+    &-table
+        margin-top: 130px
+        border-collapse: collapse
+        td
+            padding: 15px 19px
+            text-align: left
+            max-width: 296px
+            height: 125px
+            border: 1px solid #979797
+            
+        &__subtitle
+            color: $second-color
+            padding-bottom: 7px
+
+.requirements-scroll
+    a
+        &::after
+            left: 32px
+
+
+.quotes
+    height: 100vh
+    background-image: url('../img/quotes-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: left top
+    position: relative
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        padding-top: 160px
+    &-description
+        padding-top: 120px
+        max-width: 430px
+        &__title
+            padding-bottom: 117px
+        &__text
+            padding-bottom: 60px
+    &-content
+        &__item
+            max-width: 450px
+            max-height: 200px
+            background: rgba(255, 255, 255, 0.08)
+            border-radius: 10px
+            margin-bottom: 30px
+            padding: 10px 15px
+            transition: .5s
+            &:hover
+                transform: translateX(-50px)
+                cursor: pointer
+            &-top
+                display: flex
+                align-items: center
+                padding-bottom: 30px
+                position: relative
+                &::after
+                    content: ''
+                    background-image: url('../img/twitter.svg')
+                    position: absolute
+                    right: 6px
+                    top: 15px
+                    width: 19px
+                    height: 16px
+            &-person
+                display: block
+                padding-left: 30px
+            &-name
+                color: $second-color
+            &-img
+                border-radius: 50%
+                box-shadow: 7px 4px 0 -1px #ffb548
+            &-prof
+                opacity: 0.5
+            &-date
+                margin: 10px 0
+                max-width: 230px
+                height: 20px
+                font-size: 14px
+                line-height: 19px
+                opacity: 0.5
+
+.quotes-scroll
+    a
+        &::after
+            left: 26px
+
+
+@import 'media'              
