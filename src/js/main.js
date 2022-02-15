@@ -3,8 +3,8 @@ $(function () {
   $('.about-slider').slick({
     fade: true,
     dots: true,
-    prevArrow: '<img class="slider-arrow slider-arrow__prev" src="../img/slider-prev.svg" alt="Arrow">',
-    nextArrow: '<img class="slider-arrow slider-arrow__next" src="../img/slider-next.svg" alt="Arrow">',
+    prevArrow: '<img class="slider-arrow slider-arrow__prev" src="img/slider-prev.svg" alt="Arrow">',
+    nextArrow: '<img class="slider-arrow slider-arrow__next" src="img/slider-next.svg" alt="Arrow">',
   });
 
   const wow = new WOW({
