@@ -11,7 +11,7 @@ $(function () {
     boxClass: 'wow',
     animateClass: 'animate__animated',
     offset: 700,
-    mobile: true,
+    mobile: false,
     live: true
   });
   wow.init();
@@ -20,7 +20,7 @@ $(function () {
     boxClass: 'wow',
     animateClass: 'animate__animated',
     offset: 700,
-    mobile: true,
+    mobile: false,
     live: true
   });
   waw.init();
@@ -29,7 +29,7 @@ $(function () {
     boxClass: 'wow',
     animateClass: 'animate__animated',
     offset: 100,
-    mobile: true,
+    mobile: false,
     live: true
   });
   wuw.init();
@@ -38,9 +38,7 @@ $(function () {
 
   accordion.forEach(acc => {
     acc.addEventListener('click', () => {
-      console.log(acc);
       const acco = acc.parentNode;
-      console.log(acco);
       if (acco.classList.contains('active')) {
         acco.classList.remove('active');
       } else {
@@ -57,4 +55,21 @@ $(function () {
 
   });
 
+  const menuClose = document.querySelector('.hamburger-menu__close'),
+        menuSide = document.querySelector('.hamburger-menu'),
+        menuOpen = document.querySelector('.hamburger');
+
+    menuOpen.addEventListener('click', () => {
+        menuSide.classList.add('active');
+    }) 
+
+    menuClose.addEventListener('click', () => {
+        menuSide.classList.remove('active');
+    })
+
+    document.addEventListener('click', e => {
+        if (!e.target.closest('.hamburger-menu') && !e.target.closest('.hamburger')) {
+            menuSide.classList.remove('active');
+        }
+    })
 });

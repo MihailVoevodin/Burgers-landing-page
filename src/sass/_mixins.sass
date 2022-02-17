@@ -1,3 +1,13 @@
+@mixin header-right
+    &::before
+        content: ''
+        position: absolute
+        height: 30px
+        width: 1px
+        left: -25px
+        border-left: .8px solid #fff
+        opacity: 0.5
+    
 @mixin header-top
     font:
         size: 12px
@@ -10,3 +20,5 @@
     font-size: 14px
     line-height: 19px
     opacity: 0.5
+
+

@@ -34,14 +34,7 @@
                 width: 10px                     
         &__xbox
             position: relative
-            &::before
-                content: ''
-                position: absolute
-                height: 30px
-                width: 1px
-                left: -25px
-                border-left: .8px solid #fff
-                opacity: 0.5
+            @include header-right
             a
                 display: block
                 background-image: url('../img/xbox-icon.svg')
@@ -53,7 +46,7 @@
                 display: block
                 background-image: url('../img/steam-icon.svg')
                 width: 31px
-                height: 31px
+                height: 31px    
     &-content
         text-align: center
         align-items: center
@@ -62,6 +55,43 @@
         &__descr
             padding-bottom: 30px
 
+.hamburger 
+    display: none
+    cursor: pointer
+    position: relative
+    @include header-right
+    span 
+        display: block
+        margin: 6px
+        width: 35px
+        height: 3px
+        background-color: #fff
+
+.hamburger-menu
+    color: #fff
+    text-transform: uppercase
+    font-weight: 700
+    position: absolute
+    width: 250px
+    height: 100vh
+    right: -100%
+    visibility: hidden
+    background-color: $second-color
+    z-index: 10
+    transition: all .6s
+    &__list
+        margin: 120px 0 0 20px
+    li
+        padding-bottom: 15px
+    &__close
+        position: absolute
+        right: 25px
+        top: 25px
+        cursor: pointer
+
+.active
+    right: 0
+    visibility: visible
 
 .dropbtn
     cursor: pointer
@@ -104,8 +134,7 @@
     background-size: cover
     position: relative
     &-wrapper
-        padding-top: 150px
-        padding-bottom: 150px
+        padding: 60px 0
         display: flex
     &-content
         padding-top: 50px
@@ -121,7 +150,7 @@
                 width: 100%
                 height: 3px
                 left: 0
-                bottom: 57px
+                bottom: 53px
         &__text
             text-align: justify
             padding-right: 50px
@@ -144,6 +173,7 @@
 .slider-arrow
     position: absolute
     top: 50%
+    transform: translateY(-50%)
     cursor: pointer
     &__next
         right: -50px
@@ -186,8 +216,9 @@
     background-size: cover
     position: relative
     &-wrapper
-        padding-left: 660px
-        padding-top: 170px
+        float: right
+        padding-right: 110px
+        padding-top: 60px
         margin: 0
     &-title
         padding-top: 10px
@@ -224,7 +255,7 @@
                 content: ''
                 position: absolute
                 width: 0px
-                height: 131px
+                height: 130px
                 left: 6px
                 top: 19px
                 border-left: 2px solid #fff     
@@ -235,6 +266,7 @@
             font-size: 36px
             line-height: 36px
             letter-spacing: 2px
+            cursor: pointer
         &__text
             max-height: 0
             overflow: hidden
@@ -258,20 +290,24 @@
     position: relative
     &-wrapper
         text-align: center
-        padding-top: 145px
+        padding-top: 60px
     &-table
-        margin-top: 130px
-        border-collapse: collapse
-        td
+        margin-top: 60px
+        padding-bottom: 60px
+        display: grid
+        grid-template: repeat(3, 125px) / repeat(2, 300px)
+        grid-auto-rows: 125px
+        &__item
             padding: 15px 19px
             text-align: left
-            max-width: 296px
-            height: 125px
             border: 1px solid #979797
-            
         &__subtitle
             color: $second-color
             padding-bottom: 7px
+
+    
+.horizontal
+    grid-column: 1 / 3
 
 .requirements-scroll
     a
@@ -289,7 +325,7 @@
     &-wrapper
         display: flex
         justify-content: space-between
-        padding-top: 160px
+        padding-top: 60px
     &-description
         padding-top: 120px
         max-width: 430px
@@ -355,7 +391,7 @@
     padding-top: 50px
     &-content
         padding-top: 170px
-        max-width: 650px
+        max-width: 560px
         &__text
             padding-top: 50px
             padding-bottom: 60px
@@ -397,6 +433,7 @@
         display: flex
         justify-content: space-between
         padding-top: 25px
+        padding-bottom: 40px
         border-top: 1px solid rgba(255,255,255, .5)
         &__copyright
             @include tiny-font

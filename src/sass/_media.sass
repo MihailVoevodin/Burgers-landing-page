@@ -1,7 +1,114 @@
 
-@media screen and (max-width: 1920px)
+@media (max-width: 1200px)
+    .header-content
+        &__title
+            margin-top: 110px
+    .about-slider
+        max-width: 360px
+        &__item
+            height: 500px
+    .about
+        &-content
+            &__title
+                font-size: 60px
+                line-height: 60px
     
     
-@media screen and (max-width: 940px)
+@media (max-width: 1025px)
     .menu
         display: none
+    .header-right__xbox,
+    .header-right__steam
+        display: none
+    .hamburger
+        display: block
+    .about-slider
+        max-width: 350px
+        &__item
+            height: 500px
+    .about
+        &-content
+            &__title
+                font-size: 50px
+                line-height: 50px
+                &::after
+                    width: 90%
+            &__text
+                padding-right: 20px
+                padding-left: 0
+                font-size: 16px
+                line-height: 16px
+
+
+@media (max-width: 769px)
+    .about-slider
+        margin: 0 auto
+        max-width: 350px
+        &__item
+            height: 370px
+    .about
+        &-wrapper
+            padding: 30px 0
+            display: block
+            text-align: center
+        &-content
+            padding-top: 0
+            &__title
+                padding-bottom: 0
+                &::after
+                    display: none
+            &__text
+                text-align: center
+                padding-right: 0
+
+
+
+@media (max-width: 480px)
+    .header-content
+        &__title
+            margin-top: 140px
+    .logo
+        img
+            width: 35px
+            height: 35px
+    .title
+        font-size: 33px
+        line-height: 33px
+    .subtitle
+        font-size: 18px
+        line-height: 18px
+    .btn
+        font-size: 14px
+        line-height: 19px
+    .about-slider
+        margin: 50px auto
+        max-width: 240px
+        &__item
+            height: 280px
+    .slider-arrow
+        &__next
+            right: -25px
+        &__prev
+            left: -25px
+
+    
+@media ( max-height: 600px)
+    .scroll
+        display: none
+    .header-content
+        &__title
+            margin-top: 100px
+    .logo
+        img
+            width: 35px
+            height: 35px
+    .title
+        font-size: 33px
+        line-height: 33px
+    .subtitle
+        font-size: 18px
+        line-height: 18px
+    .btn
+        font-size: 14px
+        line-height: 19px
+    
