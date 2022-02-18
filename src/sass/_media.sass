@@ -12,7 +12,9 @@
             &__title
                 font-size: 60px
                 line-height: 60px
-    
+    .features
+        &-wrapper
+            padding-right: 0
     
 @media (max-width: 1025px)
     .menu
@@ -27,6 +29,7 @@
         &__item
             height: 500px
     .about
+        min-height: auto
         &-content
             &__title
                 font-size: 50px
@@ -38,6 +41,51 @@
                 padding-left: 0
                 font-size: 16px
                 line-height: 16px
+    .about-scroll,
+    .features-scroll,
+    .requirements-scroll,
+    .quotes-scroll
+        display: none
+    .features
+        background-image: url('../img/features-bg-media.jpg')
+    .quotes
+        min-height: auto
+        &-content
+            padding-left: 30px
+            &__item
+                &-person
+                    padding-left: 15px
+                &-name
+                    font-size: 18px
+                &-prof
+                    font-size: 14px
+                &-text
+                    font-size: 14px
+                    line-height: 16px
+                &-date
+                    font-size: 12px
+                    line-height: 14px
+    .subscribe
+        &-content
+            padding-top: 60px
+    .footer
+        .menu
+            display: block
+            li
+                font-size: 10px
+                padding: 0 10px
+        &-socials
+            &__link
+                &:hover
+                    fill: white
+                &:not(:first-child)
+                    margin-left: 20px
+        &-privacy
+            &__copyright
+                font-size: 10px
+            &__link
+                font-size: 10px
+
 
 
 @media (max-width: 769px)
@@ -60,8 +108,63 @@
             &__text
                 text-align: center
                 padding-right: 0
-
-
+    .quotes
+        &-wrapper
+            display: block
+            justify-items: center
+        &-description
+            text-align: center
+            padding-top: 0
+            max-width: 100%
+            &__title
+                padding-bottom: 40px
+            &__text
+                padding-bottom: 30px
+        &-content
+            padding-left: 0
+            padding-bottom: 40px
+            &__item
+                max-width: 100%
+                margin-bottom: 0
+                margin-top: 30px
+                &:hover
+                    transform: none
+                &-person
+                    padding-left: 30px
+                &-name
+                    font-size: 24px
+                &-prof
+                    font-size: 18px
+                &-text
+                    font-size: 18px
+                    line-height: 20px
+                &-date
+                    font-size: 16px
+                    line-height: 19px
+    .subscribe
+        &-content__form-email
+            min-width: 170px
+    .footer
+        &-wrapper
+            display: block
+            text-align: center
+        .menu
+            &-list
+                flex-wrap: wrap
+                justify-content: center
+                &__item
+                    margin-top: 10px
+        &-socials
+            &__link
+                margin-left: 20px
+        &-privacy
+            flex-wrap: wrap
+            justify-content: center
+            &__copyright
+                padding-right: 20px
+                font-size: 8px
+            &__link
+                font-size: 8px
 
 @media (max-width: 480px)
     .header-content
@@ -82,14 +185,71 @@
         line-height: 19px
     .about-slider
         margin: 50px auto
-        max-width: 240px
+        max-width: 280px
         &__item
-            height: 280px
+            height: 400px
     .slider-arrow
         &__next
             right: -25px
         &__prev
             left: -25px
+    .features
+        min-height: auto
+        &-wrapper
+            float: none
+        &-accordion
+            height: 315px
+            &__item
+                padding-bottom: 20px
+                &::before
+                    top: 4px
+            &__title
+                font-size: 21px
+                line-height: 21px
+            &__text
+                font-size: 14px
+                line-height: 16px
+            .active
+                &:not(:last-child)::after
+                    height: 110px
+                    top: 11px
+    .requirements
+        min-height: auto
+        &-table
+            &__subtitle
+                font-size: 18px
+                line-height: 18px
+            &__text
+                font-size: 14px
+                line-height: 16px
+    .quotes
+        &-content
+            &__item
+                &-name
+                    font-size: px
+                &-prof
+                    font-size: 14px
+                &-text
+                    font-size: 14px
+                    line-height: 16px
+                &-date
+                    font-size: 12px
+                    line-height: 14px
+    .subscribe
+        &-content__form
+            display: block
+            &-email
+                width: 100%
+            &-btn
+                margin-top: 20px
+                min-width: 100%
+
+
+@media (max-width: 380px)
+    .about-slider
+        max-width: 230px
+        &__item
+            height: 350px
 
     
 @media ( max-height: 600px)
