@@ -7,6 +7,8 @@
 Реализован слайдер с помощью библиотеки [slick](https://kenwheeler.github.io/slick/).
 Анимации сделаны с помощью [WoW JS](https://wowjs.uk/).
 
+Адаптировано под все устройства.
+
 ## Демо
 
 ![Game](https://user-images.githubusercontent.com/72670840/217917032-886a4b66-ce8b-422e-93e9-b6d2aaa07023.gif)
